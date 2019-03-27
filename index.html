@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OWL</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link rel="shortcut icon" href="./img/favicon.ico" />
+</head>
+<body>
+	<!--NAVBAR-->
+	<nav class="navbar navbar-expand-lg navbar-dark sticky">
+	  	<img src="./img/logo_icon.png" id="logo"/>
+		<img src="./img/logo_name.png" id="logo"/>
+	  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  	</button>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto push">
+		    	<li class="nav-item active">
+		    		<a class="nav-link" href="#cover">HOME <span class="sr-only">(current)</span></a>
+		      	</li>
+		      	<li class="nav-item">
+		        	<a class="nav-link" href="#servicios">SERVICIOS</a>
+		      	</li>
+		      	<li class="nav-item">
+		        	<a class="nav-link" href="#portfolio">PORTFOLIO</a>
+		      	</li>
+		      	<li class="nav-item">
+		        	<a class="nav-link" href="#integrantes">FUNDADORES</a>
+		      	</li>
+		      	<li class="nav-item">
+		        	<a class="nav-link" href="#contactanos">CONTACTANOS</a>
+		      	</li>
+		    </ul>
+		</div>
+	</nav>
+	<!--COVER-->
+	<div class="container zone" id="cover">
+		<img class="cover" src="./img/background_cover.png"></img>
+		<div class="centered">Construimos abstracciones de calidad, para convertir sus ideas y objetivos en realidad.</div>
+	</div>
+	<!--SERVICIOS-->
+	<div>
+	<h1 class="header" id="servicios">SERVICIOS</h1>
+		<div class="zone grid-wrapper">
+			<div class="zone project-item">
+				<img src="./img/mobile-app-development.png"></img>
+				<p class="layout">Mobile Development</p>
+			</div>
+			<div class="zone project-item">
+				<img src="./img/consulting.png"></img>
+				<p class="layout">Consulting</p>
+			</div>
+			<div class="zone project-item">
+				<img src="./img/web-development.png"></img>
+				<p class="layout">Web Development</p>
+			</div>
+		</div>
+		<p class="center-p">
+			<button class="button" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><div class="arrow"></div>
+  			</button>
+		</p>
+		<div class="collapse" id="collapseExample">
+			<div class="card card-body">Ejemplos de los servicios que se dan. Modularizado y a medida. Algo con diseño.
+		  	</div>
+		</div>
+	</div>
+	<!--PORTFOLIO-->
+	<h1 class="header grey" id="portfolio">PORTFOLIO</h1>
+	<div class="container grey zone normal">En construcción!!!</div>
+	<!--FUNDADORES-->
+	<div id="integrantes"><h1 class="header">FUNDADORES</h1></div>
+	<div class="zone grid-wrapper">
+		<div class="persona-item">
+			<div class="circular--portrait"><img src="./img/juan.png" alt="avatar" class="profile-pic"></img></div>
+			<p>Juan</p>			
+		</div>
+		<div class="persona-item">
+			<div class="circular--portrait"><img src="./img/facu.png" alt="avatar" class="profile-pic"></img></div>
+			<p>Facundo</p>			
+		</div>
+	</div>
+	<!--FOOTER-->
+	<footer class="zone grey" id="contactanos">
+		<h1>CONTACTANOS</h1>
+		<div class="footer-container">
+			<form>
+				<div class="form-row">
+					<div class="form-group col-lg-5">
+						<input type="text" class="form-control" id="inputName" placeholder="Nombre">
+						<input type="email" class="form-control" id="inputEmail" placeholder="Email">
+						<input type="text" class="form-control" id="inputPhone" placeholder="Teléfono">
+					</div>
+					<div class="form-group col-lg-7">
+						<textarea class="form-control" id="textArea" rows="6" placeholder="Mensaje"></textarea>
+					</div>
+				</div>
+				<button type="submit" class="btn btn-warning">ENVIAR</button>
+			</form>
+			<img src="./img/logo_mini.png">
+		</div>
+		<div class="rights"><p>&copy 2019 All Rights Reserved, designed by OWL Consulting</p></div>
+	</footer>
+	<!--SCRIPTS-->
+	<!--BootStrap core JavaScript-->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<!--Google Script for smooth scroll-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!--Own JavaScript-->
+	<script src="./script.js"></script>
+</body>
+</html>
