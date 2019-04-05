@@ -309,12 +309,6 @@ form{
 	.centered{
 		font-size: 1em;
 	}
-
-	.cover{
-		min-width: 100%;
-		background-size: cover;
-		overflow: hidden;
-	}
 }
 
 @media only screen and (max-height:300px){
