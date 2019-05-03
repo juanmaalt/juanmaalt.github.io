@@ -3,13 +3,13 @@
 <head>
 	<title>OWL</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:200" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="./style.css">
 	<link rel="shortcut icon" href="./img/favicon.ico" />
 </head>
 <body>
 	<!--NAVBAR-->
-	<nav class="navbar navbar-expand-lg navbar-dark sticky">
+	<nav class="navbar navbar-expand-lg sticky transit">
 	  	<img src="./img/logo_icon.png" id="logo"/>
 		<img src="./img/logo_name.png" id="logo"/>
 	  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,7 +27,7 @@
 		        	<a class="nav-link" href="#portfolio">PORTFOLIO</a>
 		      	</li>
 		      	<li class="nav-item">
-		        	<a class="nav-link" href="#integrantes">FUNDADORES</a>
+		        	<a class="nav-link" href="#integrantes">NOSOTROS</a>
 		      	</li>
 		      	<li class="nav-item">
 		        	<a class="nav-link" href="#contactanos">CONTACTANOS</a>
@@ -43,34 +43,43 @@
 	<!--SERVICIOS-->
 	<div>
 	<h1 class="header" id="servicios">SERVICIOS</h1>
-		<div class="zone grid-wrapper">
-			<div class="zone project-item">
+		<div class="wrapper">
+			<div class="div-grid LR">
 				<img src="./img/mobile-app-development.png"></img>
-				<p class="layout">Mobile Development</p>
+				<p class="project-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat dolorum, ab odit voluptatem officiis perferendis, aliquam perspiciatis vitae, eius quos maiores ex itaque repudiandae at quas magni, esse sit. Laboriosam.</p>
 			</div>
-			<div class="zone project-item">
+			<div class="div-grid RL">
+				<p class="project-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat dolorum, ab odit voluptatem officiis perferendis, aliquam perspiciatis vitae, eius quos maiores ex itaque repudiandae at quas magni, esse sit. Laboriosam.</p>
 				<img src="./img/consulting.png"></img>
-				<p class="layout">Consulting</p>
 			</div>
-			<div class="zone project-item">
+			<div class="div-grid LR">
 				<img src="./img/web-development.png"></img>
-				<p class="layout">Web Development</p>
+				<p class="project-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat dolorum, ab odit voluptatem officiis perferendis, aliquam perspiciatis vitae, eius quos maiores ex itaque repudiandae at quas magni, esse sit. Laboriosam.</p>
 			</div>
 		</div>
+		<!--
 		<p class="center-p">
 			<button class="button" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><div class="arrow"></div>
   			</button>
 		</p>
 		<div class="collapse" id="collapseExample">
-			<div class="card card-body">Ejemplos de los servicios que se dan. Modularizado y a medida. Algo con diseño.
-		  	</div>
+			<div class="card card-body">Ejemplos de los servicios que se dan. Modularizado y a medida. Algo con diseño.</div>
 		</div>
+		-->
 	</div>
 	<!--PORTFOLIO-->
-	<h1 class="header grey" id="portfolio">PORTFOLIO</h1>
+	<!--
+	<h1 class="header paddingtop grey" id="portfolio">PORTFOLIO</h1>
 	<div class="container grey zone normal">En construcción!!!</div>
+	-->
+
+	<div class="container zone mods">
+		<img class="mod-img" src="./img/aMedida.png">
+		<img class="mod-img" src="./img/modularizado.png">
+	</div>
+
 	<!--FUNDADORES-->
-	<div id="integrantes"><h1 class="header">FUNDADORES</h1></div>
+	<div id="integrantes"><h1 class="header">NOSOTROS</h1></div>
 	<div class="zone grid-wrapper">
 		<div class="persona-item">
 			<div class="circular--portrait"><img src="./img/juan.png" alt="avatar" class="profile-pic"></img></div>
@@ -98,7 +107,6 @@
 				</div>
 				<button type="submit" class="btn btn-warning">ENVIAR</button>
 			</form>
-			<img src="./img/logo_mini.png">
 		</div>
 		<div class="rights"><p>&copy 2019 All Rights Reserved, designed by OWL Consulting</p></div>
 	</footer>

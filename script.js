@@ -1,6 +1,7 @@
 //NavBar bg change
 $(window).scroll(function(){
 	$('nav').toggleClass('scrolled', $(this).scrollTop() > 75)
+  $('a').toggleClass('scrolled', $(this).scrollTop() > 75)
 })
 
 
