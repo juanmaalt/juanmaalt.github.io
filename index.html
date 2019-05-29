@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>OWL</title>
+	<title>Owl</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Poppins:200" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link rel="stylesheet" href="animate.css">
 	<link rel="shortcut icon" href="./img/favicon.ico" />
 </head>
 <body>
@@ -18,98 +20,147 @@
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto push">
 		    	<li class="nav-item active">
-		    		<a class="nav-link" href="#cover">HOME <span class="sr-only">(current)</span></a>
+		    		<a class="nav-link" href="#cover">Home<span class="sr-only">(current)</span></a>
 		      	</li>
 		      	<li class="nav-item">
-		        	<a class="nav-link" href="#servicios">SERVICIOS</a>
+		        	<a class="nav-link" href="#servicios">Servicios</a>
 		      	</li>
 		      	<li class="nav-item">
-		        	<a class="nav-link" href="#portfolio">PORTFOLIO</a>
+		        	<a class="nav-link" href="#portfolio">Portfolio</a>
 		      	</li>
-		      	<li class="nav-item">
+		      	<!--
+				<li class="nav-item">
 		        	<a class="nav-link" href="#integrantes">NOSOTROS</a>
-		      	</li>
+		      	</li>-->
 		      	<li class="nav-item">
-		        	<a class="nav-link" href="#contactanos">CONTACTANOS</a>
+		        	<a class="nav-link" href="#contactanos">Contactanos</a>
+		      	</li>
+				<li class="nav-item">
+		        	<!--<p>Seguinos en:</p>-->
 		      	</li>
 		    </ul>
 		</div>
 	</nav>
 	<!--COVER-->
 	<div class="container zone cover" id="cover">
-		<!--<img class="cover" src="./img/background_cover.png"></img>-->
-		<div class="centered">Construimos abstracciones de calidad, para convertir sus ideas y objetivos en realidad.</div>
+		<div class="left ">
+			<p	class="text1 animated fadeIn slow">Construimos</p>
+			<p	class="text2 animated fadeIn slow">abstracciones de calidad,</p>
+			<p	class="text3 animated fadeIn slow">para convertir sus ideas y objetivos en realidad.</p>
+			<p	class="text4 animated fadeIn slow">Nuestro servicio es personalizado, brindamos ideas que se adaptan a la necesidad y posibilidad de cada cliente<br>Contáctanos para saber como podés lograrlo.</p>
+			<br>
+			<button type="button" class="btn btn-light animated fadeIn slow"><a class="btn"href="#contactanos">Contactanos</a></button>
+		</div>
 	</div>
 	<!--SERVICIOS-->
 	<div>
-	<h1 class="header" id="servicios">SERVICIOS</h1>
+	<h1 class="header" id="servicios">Nuestros</h1>
+	<h2 class="header2">Servicios</h2>	
 		<div class="wrapper">
-			<div class="div-grid LR">
-				<img src="./img/mobile-app-development.png"></img>
-				<p class="project-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat dolorum, ab odit voluptatem officiis perferendis, aliquam perspiciatis vitae, eius quos maiores ex itaque repudiandae at quas magni, esse sit. Laboriosam.</p>
+			<div class="project-item le">
+				<img 
+					data-aos="fade-in" 
+					data-aos-offset="200"
+   					data-aos-delay="50"
+   				 	data-aos-duration="1000"
+   				 	data-aos-easing="ease-in-out"
+   				 	src="./img/mobile-development.png">
+   				</img>
 			</div>
-			<div class="div-grid RL">
-				<p class="project-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat dolorum, ab odit voluptatem officiis perferendis, aliquam perspiciatis vitae, eius quos maiores ex itaque repudiandae at quas magni, esse sit. Laboriosam.</p>
-				<img src="./img/consulting.png"></img>
+			<div class="project-item mi">
+				<img 
+					data-aos="fade-in" 
+					data-aos-offset="200"
+					data-aos-delay="50"
+					data-aos-duration="1000"
+					data-aos-easing="ease-in-out"
+				src="./img/consulting.png">
+				</img>
 			</div>
-			<div class="div-grid LR">
-				<img src="./img/web-development.png"></img>
-				<p class="project-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat dolorum, ab odit voluptatem officiis perferendis, aliquam perspiciatis vitae, eius quos maiores ex itaque repudiandae at quas magni, esse sit. Laboriosam.</p>
+			<div class="project-item ri">
+				<img
+					data-aos="fade-in" 
+					data-aos-offset="200"
+					data-aos-delay="50"
+					data-aos-duration="1000"
+					data-aos-easing="ease-in-out"
+   				 	src="./img/web-development.png">
+   				</img>
 			</div>
 		</div>
-		<!--
-		<p class="center-p">
-			<button class="button" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><div class="arrow"></div>
-  			</button>
-		</p>
-		<div class="collapse" id="collapseExample">
-			<div class="card card-body">Ejemplos de los servicios que se dan. Modularizado y a medida. Algo con diseño.</div>
-		</div>
-		-->
+	</div>
+	<!--MODS-->
+	<div class="mods-container zone">
+		<img src="./img/back_mods2.png" class="mods"></img>
 	</div>
 	<!--PORTFOLIO-->
-	<!--
-	<h1 class="header paddingtop grey" id="portfolio">PORTFOLIO</h1>
-	<div class="container grey zone normal">En construcción!!!</div>
-	-->
-
-	<div class="container zone mods">
-		<img class="mod-img" src="./img/aMedida.png">
-		<img class="mod-img" src="./img/modularizado.png">
-	</div>
-
+	<h1 class="header paddingtop" id="portfolio">Owl</h1>
+	<h2 class="header2">Portfolio</h2>	
+	<div class="container grey zone portfolio">En construccion!!!</div>
 	<!--FUNDADORES-->
-	<div id="integrantes"><h1 class="header">NOSOTROS</h1></div>
+<!--
+	<div id="integrantes">
+		<h2 class="header2">Nosotros</h2>
+	</div>
 	<div class="zone grid-wrapper">
 		<div class="persona-item">
-			<div class="circular--portrait"><img src="./img/juan.png" alt="avatar" class="profile-pic"></img></div>
-			<p>Juan</p>			
+			<div 
+				class="circular--portrait"
+				data-aos="zoom-in"
+				data-aos-offset="100"
+				data-aos-delay="25"
+				data-aos-duration="500"
+				data-aos-easing="ease-in">
+				<img src="./img/juan.png" alt="avatar" class="profile-pic"></img>
+			</div>
+			<p 
+				data-aos="zoom-in"
+				data-aos-offset="100"
+				data-aos-delay="50"
+				data-aos-duration="1000"
+				data-aos-easing="ease-in-out">Juan
+			</p>			
 		</div>
 		<div class="persona-item">
-			<div class="circular--portrait"><img src="./img/facu.png" alt="avatar" class="profile-pic"></img></div>
-			<p>Facundo</p>			
+			<div 				
+				class="circular--portrait"
+				data-aos="zoom-in"
+				data-aos-offset="100"
+				data-aos-delay="25"
+				data-aos-duration="500"
+				data-aos-easing="ease-in">
+				<img src="./img/facu.png" alt="avatar" class="profile-pic"></img>
+			</div>
+			<p 
+				data-aos="zoom-in"
+				data-aos-offset="100"
+				data-aos-delay="50"
+				data-aos-duration="1000"
+				data-aos-easing="ease-in-out">Facundo
+			</p>			
+		</div>
+	</div>
+-->
+	<!--CONTACT FORM-->
+	<div class="zone contact-container" id="contactanos">
+		<div class="contact-form">
+			<form>
+				<h2 class="header2 hcontact">Contactanos</h1>
+					<div class="form-group col-md-8">
+						<input type="text" class="form-control" id="inputName" placeholder="Nombre">
+						<input type="email" class="form-control" id="inputEmail" placeholder="Email">
+						<input type="text" class="form-control" id="inputPhone" placeholder="Teléfono">
+						<textarea class="form-control" id="textArea" rows="8" placeholder="Mensaje"></textarea>
+					</div>
+				<button type="submit" class="btn btn-warning">ENVIAR</button>
+			</form>
 		</div>
 	</div>
 	<!--FOOTER-->
 	<footer class="zone grey" id="contactanos">
-		<h1>CONTACTANOS</h1>
-		<div class="footer-container">
-			<form>
-				<div class="form-row">
-					<div class="form-group col-lg-5">
-						<input type="text" class="form-control" id="inputName" placeholder="Nombre">
-						<input type="email" class="form-control" id="inputEmail" placeholder="Email">
-						<input type="text" class="form-control" id="inputPhone" placeholder="Teléfono">
-					</div>
-					<div class="form-group col-lg-7">
-						<textarea class="form-control" id="textArea" rows="6" placeholder="Mensaje"></textarea>
-					</div>
-				</div>
-				<button type="submit" class="btn btn-warning">ENVIAR</button>
-			</form>
-		</div>
 		<div class="rights"><p>&copy 2019 All Rights Reserved, designed by OWL Consulting</p></div>
 	</footer>
+	
 	<!--SCRIPTS-->
 	<!--BootStrap core JavaScript-->
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -119,5 +170,16 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<!--Own JavaScript-->
 	<script src="./script.js"></script>
+	<!--Rellax add-on-->
+	<script src="./rellax.min.js"></script>
+	<script>
+  		// Accepts any class name
+  		var rellax = new Rellax('.rellax');
+	</script>
+	<!--Animate On Scroll-->
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  	<script>
+    	AOS.init();
+  	</script>
 </body>
 </html>
